@@ -41,6 +41,8 @@
   position: absolute;
   display: flex;
   bottom: 0px;
+  max-width: 400px;
+  height: auto;
   align-self: center;
   z-index: 999;
 }
@@ -149,8 +151,7 @@
   }
 
   .jomardoba {
-    width: 60%;
-    height: 40%;
+    max-width: 300px;
     object-fit: cover;
   }
 
