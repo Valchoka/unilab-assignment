@@ -1,0 +1,159 @@
+.p-texts {
+  color: #8d8d8d;
+}
+
+.trips-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.trips-sections-header {
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-bottom: 20px;
+}
+
+.trips-sections-header h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #1a1a1b;
+}
+
+.trips-sections-header img {
+  max-width: 45px;
+  margin-bottom: 20px;
+}
+
+.tbilis {
+  border-radius: 50px;
+}
+.trips-grid-div {
+  margin-left: 100px;
+}
+
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-gap: 20px;
+}
+
+.icon1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trip-img {
+  width: 250px;
+  height: 180px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.trip-img:hover {
+  transform: scale(1.03);
+}
+
+.trip-tile {
+  display: grid;
+  gap: 20px;
+  max-width: 269px;
+}
+
+.title-style {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.title-style:hover {
+  color: rgb(40, 141, 174);
+  cursor: pointer;
+}
+.trip-tile:focus {
+  outline: none;
+}
+.trip-tile p {
+  color: #8d8d8d;
+  font-size: 15px;
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  padding: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#modal .modal-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+#modal .modal-img img {
+  max-width: 3 00px;
+}
+
+#modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 768px) {
+  .trips-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .trips-sections-header h2,
+  img,
+  p {
+    align-self: center;
+  }
+
+  .trips-sections-header .p-texts {
+    text-align: center;
+  }
+
+  .trips-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .trips-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .trips-sections-header h2,
+  img,
+  p {
+    align-self: center;
+  }
+
+  .trips-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+  .trip-tile {
+    gap: 5px;
+  }
+}

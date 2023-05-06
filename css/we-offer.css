@@ -1,0 +1,154 @@
+.we-offer {
+  width: 100%;
+  max-width: 1360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.space-for-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.we-offer-header,
+.booster-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.booster-card {
+  border-radius: 5px;
+}
+
+.booster-card img:hover {
+  padding: 10px;
+}
+
+.booster-card a {
+  font-size: 18px;
+  color: #4b54fa;
+}
+
+.booster-card a:hover {
+  cursor: pointer;
+  color: rgb(183, 132, 230);
+}
+
+.we-offer-header h1 {
+  color: var(--text-color);
+  /* font-size: 1px; */
+}
+.we-offer-header h2 {
+  font: 25px;
+}
+
+.take-a-tours {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.text-style {
+  font: 14px;
+  color: var(--text-color);
+}
+
+.booster-card {
+  width: 270px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  box-shadow: 1px 1px 1px 1px #a9a8a8;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booster-card img {
+  width: 265px;
+  height: 245px;
+  border-radius: 5px;
+}
+
+.we-offer-georgia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 320px) {
+  .we-offer-header h3,
+  h2 {
+    align-items: center;
+    font-size: 10px;
+  }
+
+  .space-for-div {
+    height: auto;
+  }
+
+  .take-a-tours {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .booster-card {
+    width: 100%;
+  }
+
+  .booster-card img {
+    width: 150%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 762px) {
+  .we-offer-header h3,
+  h2 {
+    font-size: 12px;
+  }
+
+  .space-for-div {
+    height: auto;
+    max-width: 865px;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .take-a-tours {
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+
+  .booster-card {
+    width: 100%;
+    padding: 40px;
+    margin-top: 20px;
+  }
+
+  .booster-card img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .we-offer-georgia {
+    display: flex;
+    align-items: center;
+  }
+}

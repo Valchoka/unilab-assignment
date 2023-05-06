@@ -1,0 +1,100 @@
+.destination {
+  width: 100%;
+  max-width: 1360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.destination-tours {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 15px;
+}
+
+.destination-info {
+  max-width: 300px;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.destination-card {
+  position: relative;
+  max-width: 270px;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.destination-card :first-child img {
+  max-width: 250px;
+  width: 100%;
+  height: 250px;
+}
+
+.destination-prices {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tour-prices h5 {
+  font-size: 30px;
+}
+.tour-prices h6 {
+  font-size: 14px;
+  color: #8c8c8d;
+}
+
+.destination-arrow {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: rgba(13, 181, 219, 0.503);
+}
+
+@media only screen and (max-width: 720px) {
+  .destination {
+    width: 100%;
+  }
+  .destination-tours {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .destination-info {
+    max-width: 250px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .destination {
+    display: flex;
+    align-items: center;
+  }
+  .destination-tours {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

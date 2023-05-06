@@ -1,0 +1,10 @@
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
