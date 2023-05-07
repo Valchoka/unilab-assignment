@@ -22,7 +22,7 @@ const trips = [
   {
     title: "Fire Camp",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem...",
-    img: "pretty-ass.png",
+    img: "mo-baghdadi-109634-unsplash.png",
   },
   {
     title: "Corporate Holidays",
